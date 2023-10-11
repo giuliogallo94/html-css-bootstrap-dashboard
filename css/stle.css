@@ -1,0 +1,78 @@
+/* COMMON */
+:root {
+  --light-bg: #fafbfb;
+  --side-bg: #051e34;
+  --top-content-bg: #1b72e8;
+}
+
+img {
+  max-width: 100%;
+}
+/* BODY */
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* HEADER */
+header {
+  /* height: 10vh; */
+  /* width: 100vw; */
+  background-color: var(--light-bg);
+}
+
+/* Nav */
+nav {
+  height: 10vh;
+}
+
+nav img {
+  height: 10vh;
+}
+
+/* MAIN */
+main {
+  height: 90vh;
+  width: 100vw;
+  /* display: flex; */
+}
+
+/* SIDEBAR */
+.sidebar {
+  height: 90vh;
+  width: 15%;
+  background-color: var(--side-bg);
+  background-image: url(../img/sidebar-bg.png);
+}
+
+/* CONTENT */
+.content {
+  height: 90vh;
+  width: 100%;
+  background-color: var(--light-bg);
+}
+
+/* Top content */
+.top-content {
+  height: 15vh;
+  /* width: ; */
+  background-color: var(--top-content-bg);
+}
+
+.top-content .col-10 {
+  /* DEBUG */
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 768px) {
+  .change-order {
+    order: 3;
+  }
+}
+
+/* Bottom content */
+.bottom-content {
+  height: 75vh;
+  width: 100%;
+}
