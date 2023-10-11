@@ -52,23 +52,26 @@ nav .searchbar {
 
 /* MAIN */
 main {
-  height: 90vh;
-  width: 100vw;
-  /* display: flex; */
+  height: calc(100% - 75px);
+  width: 100%;
 }
 
 /* SIDEBAR */
 .sidebar {
-  height: 90vh;
+  /* height: 100%; */
   width: 75px;
   background-color: var(--side-bg);
   background-image: url(../img/sidebar-bg.png);
 }
 
+.sidebar i {
+  align-self: center;
+  color: white;
+}
 /* CONTENT */
 .content {
-  height: 90vh;
-  width: 100%;
+  height: calc(100vh - 75px);
+  width: calc(100vw - 75px);
   background-color: var(--light-bg);
 }
 

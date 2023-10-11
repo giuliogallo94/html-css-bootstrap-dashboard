@@ -26,7 +26,7 @@
         <!-- Header -->
         <header>
           <!-- Nav -->
-          <nav class="">
+          <nav>
             <div class="container-fluid h-100 p-2 container_nav">
               <div class="row bg-white">
                 <!-- Logo -->
@@ -40,7 +40,7 @@
                   <img src="img/logo.svg" alt="" />
                 </div>
                 <!-- Search -->
-                <div class="col-9 col-xl-8 p-1">
+                <div class="col-9 col-xl-9 p-1">
                   <div class="searchbar ps-1 rounded-3">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input
@@ -54,11 +54,11 @@
 
                 <!-- Toolbar -->
                 <div
-                  class="col-xl-2 d-none d-xl-block align-self-center text-center">
-                  <i class="fa-solid fa-list"></i>
-                  <i class="fa-solid fa-circle-question"></i>
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                  <i class="fa-solid fa-bell alarm"></i>
+                  class="col-xl-1 d-none d-xl-block align-self-center text-center ps-0">
+                  <i class="fa-solid fa-list mx-1"></i>
+                  <i class="fa-solid fa-circle-question mx-1"></i>
+                  <i class="fa-solid fa-ellipsis-vertical mx-1"></i>
+                  <i class="fa-solid fa-bell alarm ms-1"></i>
                 </div>
                 <!-- /Toolbar -->
 
@@ -78,7 +78,12 @@
         <!-- Main -->
         <main class="d-flex">
           <!-- Sidebar -->
-          <div class="sidebar"></div>
+          <div class="sidebar d-flex flex-column py-3">
+            <i class="fa-solid fa-house mb-3"></i>
+            <i class="fa-solid fa-chart-simple mb-3"></i>
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-gear mt-auto"></i>
+          </div>
           <!-- /Sidebar -->
 
           <!-- Content -->
