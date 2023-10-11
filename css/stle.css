@@ -2,6 +2,7 @@
 :root {
   --light-bg: #fafbfb;
   --side-bg: #051e34;
+  --strong-grey-bg: #e5e5e5;
   --top-content-bg: #1b72e8;
 }
 
@@ -23,11 +24,30 @@ header {
 
 /* Nav */
 nav {
-  height: 10vh;
+  height: 75px;
 }
 
 nav img {
-  height: 10vh;
+  /* width: 55px; */
+  height: 55px;
+}
+
+.containere_nav {
+  align-items: center;
+}
+
+nav .searchbar {
+  background-color: var(--strong-grey-bg);
+  height: 50px;
+  line-height: 50px;
+}
+
+.searchbar input {
+  width: 80%;
+}
+
+.alarm {
+  color: #ff8f00;
 }
 
 /* MAIN */
@@ -40,7 +60,7 @@ main {
 /* SIDEBAR */
 .sidebar {
   height: 90vh;
-  width: 15%;
+  width: 75px;
   background-color: var(--side-bg);
   background-image: url(../img/sidebar-bg.png);
 }
@@ -54,8 +74,7 @@ main {
 
 /* Top content */
 .top-content {
-  height: 15vh;
-  /* width: ; */
+  min-height: 15vh;
   background-color: var(--top-content-bg);
 }
 

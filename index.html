@@ -26,29 +26,47 @@
         <!-- Header -->
         <header>
           <!-- Nav -->
-          <nav>
-            <div class="container">
-              <div class="row">
+          <nav class="">
+            <div class="container-fluid h-100 p-2 container_nav">
+              <div class="row bg-white">
                 <!-- Logo -->
-                <div class="col-2 d-xl-none">
+                <div class="col-2 pl-0 d-xl-none align-self-center">
                   <img src="img/mobile-logo.png" alt="" />
                 </div>
                 <!-- /Logo -->
 
                 <!-- Full logo -->
-                <div class="col-3 d-none d-xl-block">
+                <div class="col-2 d-none d-xl-block align-self-center">
                   <img src="img/logo.svg" alt="" />
                 </div>
                 <!-- Search -->
-                <div class="col-8 col-xl-6">searchbar</div>
+                <div class="col-9 col-xl-8 p-1">
+                  <div class="searchbar ps-1 rounded-3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                      class="bg-transparent border-0"
+                      type="search"
+                      id="chat-search"
+                      placeholder="Prova a cercare: Lezioni di Laravel" />
+                  </div>
+                </div>
                 <!-- /Search -->
 
                 <!-- Toolbar -->
-                <div class="col-xl-2 d-none d-xl-block">toolbar</div>
+                <div
+                  class="col-xl-2 d-none d-xl-block align-self-center text-center">
+                  <i class="fa-solid fa-list"></i>
+                  <i class="fa-solid fa-circle-question"></i>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <i class="fa-solid fa-bell alarm"></i>
+                </div>
                 <!-- /Toolbar -->
 
                 <!-- Alarm -->
-                <div class="col-2 col-xl-1">alarm</div>
+                <div
+                  class="col-1 col-xl-1 text-center align-self-center d-xl-none alarm">
+                  <i class="fa-solid fa-bell"></i>
+                </div>
                 <!-- /Alarm -->
               </div>
             </div>
