@@ -165,7 +165,7 @@
               <div
                 class="col-12 text col-md-3 order-md-3 d-flex align-items-center justify-content-xl-center align-self-start"
               >
-                <!-- PARTE VISIBILE -->
+                <!-- Visible section -->
                 <h5>Nuovo studente</h5>
                 <button
                   class="btn btn-primary"
@@ -179,7 +179,7 @@
                     id="add-student"
                   ></i>
                 </button>
-                <!-- /PARTE VISIBILE -->
+                <!-- /Visible section -->
 
                 <!-- OFFCANVAS -->
                 <div
@@ -190,7 +190,7 @@
                 >
                   <!-- OFFCANVAS-HEADER -->
                   <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                    <h5 class="offcanvas-title ms-5" id="offcanvasRightLabel">
                       Inserisci un nuovo studente
                     </h5>
                     <button
@@ -208,7 +208,7 @@
                     <form class="container">
                       <!-- ROW OFFCANVAS -->
                       <div class="row">
-                        <!-- COL NOME OFFCANVAS -->
+                        <!-- COL Name OFFCANVAS -->
                         <div class="col-12 col-xl-6 mb-3">
                           <label for="exampleInputName1" class="form-label"
                             >Nome</label
@@ -219,9 +219,9 @@
                             id="exampleInputName1"
                           />
                         </div>
-                        <!-- /COL NOME OFFCANVAS -->
+                        <!-- /COL Name OFFCANVAS -->
 
-                        <!-- COL COGNOME OFFCANVAS -->
+                        <!-- COL Last Name OFFCANVAS -->
                         <div class="col-12 col-xl-6 mb-3">
                           <label for="exampleInputLastname1" class="form-label"
                             >Cognome</label
@@ -232,7 +232,7 @@
                             id="exampleInputLasname1"
                           />
                         </div>
-                        <!-- /COL COGNOME OFFCANVAS -->
+                        <!-- /COL Last Name OFFCANVAS -->
 
                         <!-- COL EMAIL OFFCANVAS -->
                         <div class="col-12 col-xl-6">
@@ -265,7 +265,7 @@
                         </div>
                         <!-- /COL PASSWORD -->
 
-                        <!-- COL EMAIL OFFCANVAS -->
+                        <!-- COL EMAIL-ADDRESS OFFCANVAS -->
                         <div class="col-12 col-xl-6">
                           <label for="exampleInputSurame1" class="form-label"
                             >Indirizzo Email</label
@@ -281,7 +281,7 @@
                             />
                           </div>
                         </div>
-                        <!-- /COL EMAIL OFFCANVAS -->
+                        <!-- /COL EMAIL-ADDRESS OFFCANVAS -->
 
                         <!-- COL PASSWORD -->
                         <div class="col-12 col-xl-6 mb-3">
@@ -296,7 +296,7 @@
                         </div>
                         <!-- /COL PASSWORD -->
 
-                        <!-- COL INDIRIZZO -->
+                        <!-- COL ADDRESS -->
                         <div class="col-12 mb-3">
                           <label for="exampleAddress1" class="form-label"
                             >Indirizzo</label
@@ -307,9 +307,9 @@
                             id="exampleInputAddress1"
                           />
                         </div>
-                        <!-- /COL INDIRIZZO -->
+                        <!-- /COL ADDRESS -->
 
-                        <!-- COL CITTA' -->
+                        <!-- COL CITY' -->
                         <div class="col-12 col-xl-6 mb-3">
                           <label for="exampleAddress1" class="form-label"
                             >Città</label
@@ -320,10 +320,10 @@
                             id="exampleInputAddress1"
                           />
                         </div>
-                        <!-- /COL CITTA' -->
+                        <!-- /COL CITY -->
 
-                        <!-- COL STATO -->
-                        <div class="col-12 col-xl-4">
+                        <!-- COL NATION -->
+                        <div class="col-12 col-xl-4 mb-3">
                           <label for="exampleAddress1" class="form-label"
                             >Stato</label
                           >
@@ -337,7 +337,7 @@
                             <option value="3">Australia</option>
                           </select>
                         </div>
-                        <!-- /COL STATO -->
+                        <!-- /COL NATION -->
 
                         <!-- COL CAP -->
                         <div class="col-12 col-xl-2 mb-3">
@@ -825,42 +825,55 @@
                     <h2>Todo</h2>
                   </div>
                   <div class="ms_checkbox p-4">
-                    <div class="form-check p-2 border">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckDefault"
-                      />
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Kickoff nuove classi
-                      </label>
-                    </div>
-                    <div class="form-check p-2">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckDefault"
-                      />
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Lezione su Bootstrap in classe #75
-                      </label>
-                    </div>
-                    <div class="form-check border p-2">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckDefault"
-                      />
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Controllare username github studenti
-                      </label>
+                    <div class="border">
+                      <div class="form-check p-2">
+                        <input
+                          class="form-check-input ms-1"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label
+                          class="form-check-label ms-1"
+                          for="flexCheckDefault"
+                        >
+                          Kickoff nuove classi
+                        </label>
+                      </div>
+                      <div class="form-check border-top border-bottom p-2">
+                        <input
+                          class="form-check-input ms-1"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label
+                          class="form-check-label ms-1"
+                          for="flexCheckDefault"
+                        >
+                          Lezione su Bootstrap in classe #75
+                        </label>
+                      </div>
+                      <div class="form-check p-2">
+                        <input
+                          class="form-check-input ms-1"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label
+                          class="form-check-label ms-1"
+                          for="flexCheckDefault"
+                        >
+                          Controllare username github studenti
+                        </label>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <!-- /Todo -->
+
+                <!-- Users Stats -->
                 <div class="card mb-3">
                   <div class="container py-4 px-4">
                     <div class="row m-0 border rounded-2 d-flex flex-column">
@@ -887,6 +900,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- /Users Stats -->
               </div>
               <!-- /Col -->
             </div>
