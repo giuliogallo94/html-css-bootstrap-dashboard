@@ -5,13 +5,13 @@
   --top-content-bg: #1b72e8;
   --header-bg: #f8f9f9;
   --header-height: 75px;
-  --side-width: 75px;
+  --side-width: 65px;
   --top-content-btn-bg: #165bba;
   --done-bg: #198754;
   --process-bg: #ffc107;
   --failed-bg: #dc3545;
   --color-button-table: #6c757d;
-  --side-hover-bg: rgba(255, 255, 255, 0.752);
+  --side-hover-bg: rgba(255, 255, 255, 0.565);
 }
 @media screen and (min-width: 120px) {
   :root {
@@ -82,6 +82,14 @@ main {
 
 .ms_sidebar a i {
   color: white;
+}
+
+.ms_sidebar span {
+  color: white;
+}
+
+.ms_sidebar a:hover {
+  background-color: var(--side-hover-bg);
 }
 
 /* CONTENT */
