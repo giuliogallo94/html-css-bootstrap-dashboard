@@ -72,6 +72,13 @@ main {
   width: 100%;
 }
 
+
+
+
+
+.ms_input-margin {
+  margin-left: 12px;
+}
 /* SIDEBAR */
 .ms_sidebar {
   width: var(--side-width);
