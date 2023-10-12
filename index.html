@@ -20,108 +20,303 @@
   </head>
   <body>
     <!-- Wrapper -->
-    <div class="wrapper">
-      <!-- App -->
-      <div class="app">
-        <!-- Header -->
-        <header>
-          <!-- Nav -->
-          <nav>
-            <div class="container-fluid h-100 p-2 container_nav">
-              <div class="row bg-white">
-                <!-- Logo -->
-                <div class="col-2 pl-0 d-xl-none align-self-center">
-                  <img src="img/mobile-logo.png" alt="" />
-                </div>
-                <!-- /Logo -->
+    <div class="ms_wrapper">
+      <!-- Header -->
+      <header class="">
+        <!-- Nav -->
+        <nav>
+          <div class="container-fluid ms_container-nav">
+            <div class="row bg-white">
+              <!-- Logo -->
+              <div class="col-2 pl-0 d-xl-none align-self-center">
+                <img src="img/mobile-logo.png" alt="" />
+              </div>
+              <!-- /Logo -->
 
-                <!-- Full logo -->
-                <div class="col-2 d-none d-xl-block align-self-center">
-                  <img src="img/logo.svg" alt="" />
+              <!-- Full logo -->
+              <div class="col-2 d-none d-xl-block align-self-center">
+                <img src="img/logo.svg" alt="" />
+              </div>
+              <!-- Search -->
+              <div class="col-9 col-xl-9 p-1 align-self-center">
+                <div class="searchbar ps-1 rounded-3">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input
+                    class="bg-transparent border-0"
+                    type="search"
+                    id="chat-search"
+                    placeholder="Prova a cercare: Lezioni di Laravel" />
                 </div>
-                <!-- Search -->
-                <div class="col-9 col-xl-9 p-1">
-                  <div class="searchbar ps-1 rounded-3">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input
-                      class="bg-transparent border-0"
-                      type="search"
-                      id="chat-search"
-                      placeholder="Prova a cercare: Lezioni di Laravel" />
+              </div>
+              <!-- /Search -->
+
+              <!-- Toolbar -->
+              <div class="col-xl-1 d-none d-xl-block align-self-center pe-3">
+                <ul
+                  class="d-flex justify-content-between text-center ps-0 list-unstyled mb-0">
+                  <li>
+                    <a class="text-reset" href=""
+                      ><i class="fa-solid fa-list"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="text-reset" href=""
+                      ><i class="fa-solid fa-circle-question"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="text-reset" href=""
+                      ><i class="fa-solid fa-ellipsis-vertical"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="text-reset" href=""
+                      ><i class="fa-solid fa-bell alarm"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /Toolbar -->
+
+              <!-- Alarm -->
+              <div
+                class="col-1 col-xl-1 text-center align-self-center d-xl-none alarm">
+                <i class="fa-solid fa-bell"></i>
+              </div>
+              <!-- /Alarm -->
+            </div>
+          </div>
+        </nav>
+        <!-- /Nav -->
+      </header>
+      <!-- /Header -->
+
+      <!-- Main -->
+      <main class="d-flex">
+        <!-- Sidebar -->
+        <nav class="ms_sidebar d-flex flex-column py-3">
+          <a class="text-reset" href=""
+            ><i class="fa-solid fa-house mb-3"></i
+          ></a>
+          <a class="text-reset" href=""
+            ><i class="fa-solid fa-chart-simple mb-3"></i
+          ></a>
+          <a class="text-reset" href=""><i class="fa-solid fa-signal"></i></a>
+          <a class="text-reset mt-auto" href=""
+            ><i class="fa-solid fa-gear"></i
+          ></a>
+        </nav>
+        <!-- /Sidebar -->
+
+        <!-- Content -->
+        <div class="ms_content">
+          <!-- Top content -->
+          <div class="top-content">
+            <div class="container ms_top-content">
+              <div class="row justify-content-around d-flex">
+                <!-- Add student -->
+                <div class="col-10 col-md-4 order-md-3">Add student</div>
+                <!-- /Add Students -->
+
+                <!-- Boolean-services -->
+                <div class="col-10 col-md-4">Services</div>
+                <!-- /Boolean-services -->
+
+                <!-- Students -->
+                <div class="col-10 col-md-4">Students</div>
+                <!-- /Students -->
+              </div>
+            </div>
+          </div>
+          <!-- /Top Content -->
+
+          <!-- Bottom content -->
+          <div class="bottom-content">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 col-xl-7">
+                  <div class="card my-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eos voluptatibus cupiditate fugiat exercitationem quia
+                    perferendis iure, explicabo dolore blanditiis perspiciatis
+                    corrupti, velit architecto repellat vero dolor consequuntur,
+                    obcaecati voluptas sit. Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Commodi voluptate ipsum hic
+                    iure voluptates, aut deserunt? Doloribus alias saepe earum
+                    ipsum, iure atque deleniti culpa repellat dolores
+                    repellendus laboriosam ea.
+                  </div>
+                  <div class="card my-2">
+                    <div class="accordion" id="accordionExample">
+                      <!-- FAQ -->
+                      <div class="accordion-item ms_faq-title p-2 border-dark">
+                        <h2 class="">F.A.Q.</h2>
+                      </div>
+                      <!-- /FAQ -->
+                      <div class="accordion-item border-dark">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            Come aggiungere un nuovo studente?
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseOne"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingOne"
+                          data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            Placeholder content for this accordion, which is
+                            intended to demonstrate the
+                            <code>.accordion-flush</code> class. This is the
+                            first item's accordion body.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- PRIMO -->
+                      <div class="accordion-item border-dark">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Come aggiungere un nuovo studente?
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseOne"
+                          class="accordion-collapse collapse show"
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong
+                              >This is the first item's accordion body.</strong
+                            >
+                            It is shown by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the
+                            transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /PRIMO -->
+
+                      <!-- <div class="accordion-item border-dark">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Accordion Item #2
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseTwo"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingTwo"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong
+                              >This is the second item's accordion body.</strong
+                            >
+                            It is hidden by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the
+                            transition does limit overflow.
+                          </div>
+                        </div>
+                      </div> -->
+                      <div class="accordion-item border-dark">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Come aggiungere un nuovo studente?
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseOne"
+                          class="accordion-collapse collapse show"
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong
+                              >This is the first item's accordion body.</strong
+                            >
+                            It is shown by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the
+                            transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- /Search -->
-
-                <!-- Toolbar -->
-                <div
-                  class="col-xl-1 d-none d-xl-block align-self-center text-center ps-0">
-                  <i class="fa-solid fa-list mx-1"></i>
-                  <i class="fa-solid fa-circle-question mx-1"></i>
-                  <i class="fa-solid fa-ellipsis-vertical mx-1"></i>
-                  <i class="fa-solid fa-bell alarm ms-1"></i>
+                <div class="col-12 col-xl-5">
+                  <div class="card my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatem expedita quaerat amet. Unde, error facere.
+                    Temporibus numquam minus omnis saepe expedita excepturi,
+                    alias rem quisquam delectus aperiam, magni sint pariatur.
+                  </div>
+                  <div class="card">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sit, fugit unde accusantium adipisci natus alias commodi
+                    sapiente sed. Nam quod expedita perspiciatis rem possimus
+                    est, quidem asperiores ullam voluptate temporibus. Lorem
+                    ipsum dolor sit amet consectetur, adipisicing elit.
+                    Praesentium vero a sunt rerum voluptatibus placeat dicta
+                    officia necessitatibus! Esse, magnam. Consequatur in ipsam
+                    ducimus cum impedit cupiditate, iste ea nobis?
+                  </div>
                 </div>
-                <!-- /Toolbar -->
-
-                <!-- Alarm -->
-                <div
-                  class="col-1 col-xl-1 text-center align-self-center d-xl-none alarm">
-                  <i class="fa-solid fa-bell"></i>
-                </div>
-                <!-- /Alarm -->
               </div>
             </div>
-          </nav>
-          <!-- /Nav -->
-        </header>
-        <!-- /Header -->
-
-        <!-- Main -->
-        <main class="d-flex">
-          <!-- Sidebar -->
-          <div class="sidebar d-flex flex-column py-3">
-            <i class="fa-solid fa-house mb-3"></i>
-            <i class="fa-solid fa-chart-simple mb-3"></i>
-            <i class="fa-solid fa-signal"></i>
-            <i class="fa-solid fa-gear mt-auto"></i>
           </div>
-          <!-- /Sidebar -->
-
-          <!-- Content -->
-          <div class="content">
-            <!-- Top content -->
-            <div class="top-content">
-              <div class="container ms_top-content">
-                <div class="row justify-content-around d-flex">
-                  <!-- Add student -->
-                  <div class="col-10 col-md-4 change-order">Add student</div>
-                  <!-- /Add Students -->
-
-                  <!-- Boolean-services -->
-                  <div class="col-10 col-md-4">Services</div>
-                  <!-- /Boolean-services -->
-
-                  <!-- Students -->
-                  <div class="col-10 col-md-4">Students</div>
-                  <!-- /Students -->
-                </div>
-              </div>
-            </div>
-            <!-- /Top Content -->
-
-            <!-- Bottom content -->
-            <div class="bottom-content">
-              <div class="container">
-                <div class="row"></div>
-              </div>
-            </div>
-            <!-- /Bottom-content -->
-          </div>
-          <!-- /Content -->
-        </main>
-        <!-- /Main -->
-      </div>
-      <!-- /App -->
+          <!-- /Bottom-content -->
+        </div>
+        <!-- /Content -->
+      </main>
+      <!-- /Main -->
     </div>
     <!-- /Wrapper -->
+
+    <!-- Javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+    <!-- /Javascript -->
   </body>
 </html>
