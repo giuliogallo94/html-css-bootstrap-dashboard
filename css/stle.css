@@ -60,6 +60,7 @@ nav .searchbar {
 
 .alarm {
   color: #ff8f00;
+  padding: 0;
 }
 
 /* MAIN */
@@ -147,6 +148,10 @@ table img {
 
 tr td {
   text-align: center;
+}
+
+tr:hover {
+  background-color: var(--light-bg);
 }
 
 .ms_options i {
