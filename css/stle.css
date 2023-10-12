@@ -6,10 +6,11 @@
   --header-bg: #f8f9f9;
   --header-height: 75px;
   --side-width: 75px;
+  --top-content-btn-bg: #165bba;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 120px) {
   :root {
-    --side-width: 150px;
+    --side-width: 120px;
   }
 }
 img {
@@ -88,16 +89,24 @@ main {
 
 /* Top content */
 .top-content {
-  min-height: 15%;
+  /* min-height: 15%; */
   background-color: var(--top-content-bg);
+  color: white;
 }
 
 .top-content .col-10 {
   /* DEBUG */
-  background-color: yellow;
+  /* background-color: yellow; */
   border: 1px solid black;
 }
 
+.ms_top-content-btn {
+  background-color: var(--top-content-btn-bg);
+}
+
+.ms_boolean-apps a {
+  font-size: 0.55rem;
+}
 /* Bottom content */
 .bottom-content {
   max-height: 85%;

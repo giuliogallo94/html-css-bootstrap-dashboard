@@ -94,7 +94,7 @@
       <!-- Main -->
       <main class="d-flex">
         <!-- Sidebar -->
-        <nav class="ms_sidebar d-flex flex-column py-3">
+        <nav class="ms_sidebar d-flex flex-column py-4">
           <a class="text-reset" href=""
             ><i class="fa-solid fa-house mb-3"></i
           ></a>
@@ -111,19 +111,67 @@
         <!-- Content -->
         <div class="ms_content">
           <!-- Top content -->
-          <div class="top-content">
-            <div class="container ms_top-content">
-              <div class="row justify-content-around d-flex">
+          <div class="top-content py-3">
+            <div class="container-fluid ms_top-content">
+              <div class="row d-flex">
                 <!-- Add student -->
-                <div class="col-10 col-md-4 order-md-3">Add student</div>
+                <div
+                  class="col-12 text col-md-3 order-md-3 d-flex align-items-center justify-content-xl-center align-self-start">
+                  <h5 class="mb-0 me-4">Nuovo studente</h5>
+                  <a class="text-reset text-center fs-2" href=""
+                    ><i
+                      class="fa-solid fa-plus border border-white rounded-2 p-2"
+                      id="add-student"></i
+                  ></a>
+                </div>
                 <!-- /Add Students -->
 
                 <!-- Boolean-services -->
-                <div class="col-10 col-md-4">Services</div>
+                <div class="col-12 col-md-5 ms_boolean-apps">
+                  <div class="d-flex align-items-center">
+                    <h3 class="me-2">Boolean</h3>
+                    <a
+                      class="text-reset text-decoration-none btn rounded-pill ms_top-content-btn py-1"
+                      href=""
+                      >Piano blaze</a
+                    >
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <a
+                      class="text-reset text-decoration-none btn rounded-pill ms_top-content-btn py-1"
+                      href=""
+                      >3 app</a
+                    >
+                    <span class="mx-2">&#10095;&#10095;</span>
+                    <a
+                      class="text-reset text-decoration-none btn rounded-circle ms_top-content-btn py-1 d-xl-none"
+                      href=""
+                      >+</a
+                    >
+                    <a
+                      class="text-reset text-decoration-none btn rounded-pill ms_top-content-btn py-1 d-none d-xl-block"
+                      href=""
+                      >Boolean mobile app</a
+                    >
+                    <a
+                      class="text-reset text-decoration-none btn rounded-pill ms_top-content-btn py-1 d-none d-xl-block mx-2"
+                      href=""
+                      >Boolean web app</a
+                    >
+                    <a
+                      class="text-reset text-decoration-none btn rounded-pill ms_top-content-btn py-1 d-none d-xl-block"
+                      href=""
+                      >Boolean blog app</a
+                    >
+                  </div>
+                </div>
                 <!-- /Boolean-services -->
 
                 <!-- Students -->
-                <div class="col-10 col-md-4">Students</div>
+                <div class="col-12 col-md-4">
+                  <h5>Studenti online negli ultimi 30 minuti</h5>
+                  <span class="fs-2">125</span>
+                </div>
                 <!-- /Students -->
               </div>
             </div>
