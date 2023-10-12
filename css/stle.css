@@ -88,16 +88,10 @@ main {
 }
 
 /* Top content */
-.top-content {
+.ms_top-content {
   /* min-height: 15%; */
   background-color: var(--top-content-bg);
   color: white;
-}
-
-.top-content .col-10 {
-  /* DEBUG */
-  /* background-color: yellow; */
-  border: 1px solid black;
 }
 
 .ms_top-content-btn {
@@ -108,7 +102,7 @@ main {
   font-size: 0.55rem;
 }
 /* Bottom content */
-.bottom-content {
+.ms_bottom-content {
   max-height: 85%;
   width: 100%;
 }
