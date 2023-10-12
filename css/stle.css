@@ -10,6 +10,8 @@
   --done-bg: #198754;
   --process-bg: #ffc107;
   --failed-bg: #dc3545;
+  --color-button-table: #6c757d;
+  --side-hover-bg: rgba(255, 255, 255, 0.752);
 }
 @media screen and (min-width: 120px) {
   :root {
@@ -115,12 +117,12 @@ main {
 }
 
 /* Table */
-.ms_table-title {
+.ms_bottom-content-title {
   background-color: var(--strong-grey-bg);
 }
 
 table img {
-  width: 30px;
+  max-width: 50px;
 }
 
 .done {
@@ -137,4 +139,10 @@ table img {
 
 tr td {
   text-align: center;
+}
+
+.ms_options i {
+  color: var(--color-button-table);
+  height: 100%;
+  font-size: 1.2rem;
 }
