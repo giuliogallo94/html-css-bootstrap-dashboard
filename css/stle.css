@@ -7,6 +7,9 @@
   --header-height: 75px;
   --side-width: 75px;
   --top-content-btn-bg: #165bba;
+  --done-bg: #198754;
+  --process-bg: #ffc107;
+  --failed-bg: #dc3545;
 }
 @media screen and (min-width: 120px) {
   :root {
@@ -107,11 +110,31 @@ main {
   width: 100%;
 }
 
-.card {
-  background-color: red;
-  border: 1px solid black;
+.ms_bottom-title {
+  background-color: var(--strong-grey-bg);
 }
 
-.ms_faq-title {
+/* Table */
+.ms_table-title {
   background-color: var(--strong-grey-bg);
+}
+
+table img {
+  width: 30px;
+}
+
+.done {
+  background-color: var(--done-bg);
+}
+
+.process {
+  background-color: var(--process-bg);
+}
+
+.failed {
+  background-color: var(--failed-bg);
+}
+
+tr td {
+  text-align: center;
 }
